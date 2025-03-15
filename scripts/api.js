@@ -96,7 +96,7 @@ const wordLessonShow = (words) => {
                 <div class="card-body flex flex-col items-center">
                   <h2 class="card-title font-bold text-center">${word.word}</h2>
                   <p class="font-bold">Meaning /Pronounciation</p>
-                  <p class="font-bold py-4 text-2xl text-[#18181B]">"${word.meaning === null ? 'অর্থ পাওয়া যায়নি' : `${word.meaning}`}"</p>
+                  <p class="font-bold py-4 text-xl text-[#18181B]">"${word.meaning === null ? 'অর্থ পাওয়া যায়নি' : `${word.meaning}`}"</p>
                   
                 </div>
                 <div class="flex justify-between card-actions">
