@@ -153,7 +153,7 @@ const showSingleWordData=(word)=>{
       showWordData.innerHTML=`
         <div>
             <h2 class="text-xl font-bold flex gap-2 items-center">
-              ${word.word} <span class="text-black flex items-center gap-3">(<img src='../assets/fi-ss-microphone.png' />  :${word.pronunciation} )</span>
+              ${word.word} <span class="text-black flex items-center gap-3">(<i class="fa-solid fa-microphone-lines"></i>  :${word.pronunciation} )</span>
             </h2>
             <div class="mt-2">
               <p class="font-semibold">Meaning</p>
