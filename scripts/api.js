@@ -92,7 +92,7 @@ const wordLessonShow = (words) => {
 
         div.innerHTML = `
              <div class='bg-white px-3 py-3 rounded-md'>
-                 <div class="card  bg-gray-200 card-lg shadow-sm py-4 px-3 h-[300px]">
+                 <div class="card hover:bg-blue-200 duration-500  bg-gray-200 card-lg shadow-sm py-4 px-3 h-[300px]">
                 <div class="card-body flex flex-col items-center">
                   <h2 class="card-title font-bold text-center">${word.word}</h2>
                   <p class="font-bold">Meaning /Pronounciation</p>
