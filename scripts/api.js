@@ -42,7 +42,7 @@ const showLevelBtn = (levels) => {
     levels.forEach(btn => {
         const div = document.createElement("div")
         div.innerHTML = `
-    <button id='btn-${btn.level_no}' onClick="lessonWordFetching(${btn.level_no})" class="btn btn-outline btn-primary hover:text-white"><img src="./assets/fa-book-open.png" alt="">Lesson-${btn.level_no}</button>
+    <button id='btn-${btn.level_no}' onClick="lessonWordFetching(${btn.level_no})" class="btn btn-outline btn-primary hover:text-white">  <i class="fa-solid fa-book-open"></i> Lesson-${btn.level_no}</button>
     `
         showBtn.appendChild(div)
     });
