@@ -1,5 +1,5 @@
 
-
+// button bg remove
 const removeBg = () => {
     const ActiveBtn = document.getElementsByClassName('active')
 
@@ -9,16 +9,20 @@ const removeBg = () => {
 }
 
 
-
+// show loading
 function showLoading() {
     document.getElementById("lesson-word-section").classList='hidden';
     document.getElementById("loading").classList='flex lex flex-col items-center mt-4';
   }
   
+
+  // hidden loading
   function hiddenLoading() {
     document.getElementById("lesson-word-section").classList.add('block');
     document.getElementById("loading").classList='hidden';
   }
+
+
 
 
 // level button fetch
@@ -29,6 +33,8 @@ const levelFunctionFetch = () => {
         .then(data => showLevelBtn(data.data))
 }
 
+
+// button show
 
 const showLevelBtn = (levels) => {
     const showBtn = document.getElementById('show-btn')
@@ -44,7 +50,7 @@ const showLevelBtn = (levels) => {
 
 
 
-
+// word fetch
 const lessonWordFetching = (level) => {
     showLoading()
     fetch(`https://openapi.programming-hero.com/api/level/${level}`)
@@ -60,6 +66,7 @@ const lessonWordFetching = (level) => {
 
 
 
+// lession word show
 
 const wordLessonShow = (words) => {
     const lessonWordSction = document.getElementById('lesson-word-section')
@@ -130,6 +137,7 @@ const wordLessonShow = (words) => {
 
 }
 
+// fetch word single id
 const fetchWordById=(id)=>{
     fetch(`https://openapi.programming-hero.com/api/word/${id}`)
     .then(res=>res.json())
@@ -137,6 +145,7 @@ const fetchWordById=(id)=>{
 }
 
 
+// show single data
 const showSingleWordData=(word)=>{
     const showWordData=document.getElementById('show-word-data')
 
@@ -178,6 +187,7 @@ const showSingleWordData=(word)=>{
 
 
 
+// spech rec apply
 
 function pronounceWord(word) {
   const utterance = new SpeechSynthesisUtterance(word);
@@ -185,7 +195,7 @@ function pronounceWord(word) {
   window.speechSynthesis.speak(utterance);
 }
 
-
+// function call
 levelFunctionFetch()
 
 
