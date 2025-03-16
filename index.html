@@ -70,124 +70,137 @@
 
 
     <main class="min-h-screen">
-        
-    <!-- banner section -->
-    <section class="pb-9">
+
+        <!-- banner section -->
+        <section class="pb-9">
 
 
-        <div id="banner" class="flex items-center justify-between px-10">
+            <div id="banner" class="flex items-center justify-between px-10">
 
 
-
-            <div>
-                <h2  class="text-4xl font-bold py-3"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
-                <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান,
-                    আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
-
-                <div class="mt-4">
-                    <input type="text" id="inputName" placeholder="Enter Your Name" class="input input-neutral my-3" />
-                    <input id="inputPass" type="password" placeholder="Enter Password (123456)"
-                        class="input input-neutral" /> <br>
-                    <button id="getShow" class="btn btn-primary mt-3">Get Started</button>
-                </div>
-            </div>
-
-
-            <div>
-                <img class="w-[504px]" src="./assets/hero-student.png" alt="">
-            </div>
-
-
-
-        </div>
-
-
-
-    </section>
-
-
-
-    <!-- learning section -->
-    <section id="learn" class="mt-32 scroll-mt-28 px-10 hidden">
-        <h2 class="text-4xl font-bold text-center my-5"><span class="text-[#00BCFF]">Let's </span> Learn Vocabularies</h2>
-
-        <div id="show-btn" class="flex items-center justify-center gap-4 my-16">
-
-
-        </div>
-
-
-
-
-        <div class="bg-[#F8F8F8]  h-full py-7 px-3">
-
-            <!-- loading bar -->
-            <div class="mt-3 flex flex-col items-center hidden" id="loading">
-                <span class="loading loading-dots loading-xl"></span>
-            </div>
-
-            <!-- show Data  -->
-            <div class="" id="lesson-word-section">
 
                 <div>
-                    <p class="text-xs text-[79716B] text-center py-4">আপনি এখনো কোন Lesson Select করেন ন</p>
-                    <h2 class="text-2xl text-black text-center">একটি Lesson Select করুন।</h2>
+                    <h2 class="text-4xl font-bold py-3"><span class="text-[#00BCFF]">English</span> is Easy!!</h2>
+                    <p>আজ থেকেই আপনার ভাষা শেখার যাত্রা শুরু করুন। আপনি যদি নতুন হন অথবা <br> আপনার দক্ষতা বাড়াতে চান,
+                        আমাদের Interactive Lessons আপনাকে নিয়ে <br> যাবে অন্য একটি Level এ</p>
+
+                    <div class="mt-4">
+                        <input type="text" id="inputName" value="ratul" placeholder="Enter Your Name"
+                            class="input input-neutral my-3" />
+                        <input id="inputPass" type="password" value="123456" placeholder="Enter Password (123456)"
+                            class="input input-neutral" /> <br>
+                        <button id="getShow" class="btn btn-primary mt-3">Get Started</button>
+                    </div>
+                </div>
+
+
+                <div>
+                    <img class="w-[504px]" src="./assets/hero-student.png" alt="">
+                </div>
+
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <!-- learning section -->
+        <section id="learn" class="mt-32 scroll-mt-28 px-10 hidden">
+            <h2 class="text-4xl font-bold text-center my-5"><span class="text-[#00BCFF]">Let's </span> Learn
+                Vocabularies</h2>
+
+            <div id="show-btn" class="flex items-center justify-center gap-4 my-16">
+
+
+            </div>
+
+
+
+
+            <div class="bg-[#F8F8F8]  h-full py-7 px-3">
+
+                <!-- loading bar -->
+                <div class="mt-3 flex flex-col items-center hidden" id="loading">
+                    <span class="loading loading-dots loading-xl"></span>
+                </div>
+
+                <!-- show Data  -->
+                <div class="" id="lesson-word-section">
+
+                    <div>
+                        <p class="text-xs text-[79716B] text-center py-4">আপনি এখনো কোন Lesson Select করেন ন</p>
+                        <h2 class="text-2xl text-black text-center">একটি Lesson Select করুন।</h2>
+                    </div>
                 </div>
             </div>
-        </div>
 
 
-    </section>
+        </section>
 
 
 
-    <!-- faq section -->
-    <section id="faq" class="scroll-mt-32 mt-32 px-10 hidden">
-        <h2 class="text-4xl font-bold text-center"><span class="text-[#00BCFF]">Frequently</span> Asked Questions</h2>
+        <!-- faq section -->
+        <section id="faq" class="scroll-mt-32 mt-32 px-10 hidden">
+            <h2 class="text-4xl font-bold text-center"><span class="text-[#00BCFF]">Frequently</span> Asked Questions
+            </h2>
 
 
-        <div class="my-10">
-            <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
-                <input type="radio" name="my-accordion-3" checked="checked" />
-                <div class="collapse-title font-semibold">How do I create an account?</div>
-                <div class="collapse-content text-sm">Click the "Sign Up" button in the top right corner and follow the
-                    registration process.</div>
+            <div class="my-10">
+                <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
+                    <input type="radio" name="my-accordion-3" checked="checked" />
+                    <div class="collapse-title font-semibold">the difference between var, let, and const?</div>
+                    <div class="collapse-content text-sm"><strong>var</strong> is function-scoped, allows re-declaration
+                        and re-assignment, and is hoisted with undefined. <br>
+                        <strong> let </strong>is block-scoped, does not allow re-declaration but allows re-assignment.
+                        <br>
+                        <strong>const</strong> is block-scoped, does not allow re-declaration or re-assignment, and its
+                        value remains constant.
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">the difference between map(), forEach(), and filter()?
+                    </div>
+                    <div class="collapse-content text-sm">
+
+                        <strong>map()</strong> returns a new array with modified elements without changing the original
+                        array. <br>
+                        <strong>forEach()</strong> executes a function for each element but does not return a new
+                        array. <br>
+                        <strong>filter()</strong> returns a new array with elements that meet a specific condition. <br>
+
+                    </div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">explain arrow functions and how they are different from regular functions?</div>
+                    <div class="collapse-content text-sm"><strong>Arrow functions</strong> use => for a shorter syntax, inherit this from the surrounding scope, support implicit <br> return, cannot be used as constructors, and lack the arguments object, unlike regular functions.</div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold"> how JavaScript Promises work?</div>
+                    <div class="collapse-content text-sm"><strong>JavaScript Promises</strong> handle asynchronous operations. A Promise has three states: pending, resolved <br> (fulfilled), or rejected. It executes asynchronously and uses .then() for success and .catch() for errors.</div>
+                </div>
+                <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
+                    <input type="radio" name="my-accordion-3" />
+                    <div class="collapse-title font-semibold">how closures work in JavaScript?</div>
+                    <div class="collapse-content text-sm"><strong>Closures</strong> in JavaScript occur when a function retains access to its lexical scope, even after the outer <br> function has finished executing. This allows the inner function to access variables from the outer <br> function, even after it's returned.</div>
+                </div>
             </div>
-            <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">I forgot my password. What should I do?</div>
-                <div class="collapse-content text-sm">Click on "Forgot Password" on the login page and follow the
-                    instructions sent to your email.</div>
-            </div>
-            <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">How do I update my profile information?</div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.</div>
-            </div>
-            <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">How do I update my profile information?</div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.</div>
-            </div>
-            <div class="collapse collapse-plus bg-gray-200 border border-base-300 my-2">
-                <input type="radio" name="my-accordion-3" />
-                <div class="collapse-title font-semibold">How do I update my profile information?</div>
-                <div class="collapse-content text-sm">Go to "My Account" settings and select "Edit Profile" to make
-                    changes.</div>
-            </div>
-        </div>
 
-    </section>
+        </section>
 
 
-    <!-- modal section -->
-    <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-        <div id="show-word-data" class="modal-box border rounded-lg shadow-lg p-6 w-96 bg-white">
+        <!-- modal section -->
+        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+            <div id="show-word-data" class="modal-box border rounded-lg shadow-lg p-6 w-96 bg-white">
 
-        </div>
-    </dialog>
+            </div>
+        </dialog>
     </main>
 
 
@@ -226,4 +239,3 @@
 </body>
 
 </html>
-
