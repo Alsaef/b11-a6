@@ -1,7 +1,12 @@
 document.getElementById('getShow').addEventListener('click',function() {
     const inputPass=document.getElementById('inputPass').value;
+    const inputName=document.getElementById('inputName').value;
     console.log(inputPass);
-  if (inputPass==='123456') {
+
+    if (inputName==='') {
+      alert('Enter Name')
+    }
+ else if (inputPass==='123456') {
     document.getElementById('hedar').classList.remove('hidden')
     document.getElementById('learn').classList.remove('hidden')
     document.getElementById('faq').classList.remove('hidden')
