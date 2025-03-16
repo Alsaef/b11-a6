@@ -11,14 +11,14 @@ const removeBg = () => {
 
 // show loading
 function showLoading() {
-    document.getElementById("lesson-word-section").classList='hidden';
+    document.getElementById('lesson-word-section').classList='hidden';
     document.getElementById("loading").classList='flex lex flex-col items-center mt-4';
   }
   
 
   // hidden loading
   function hiddenLoading() {
-    document.getElementById("lesson-word-section").classList.add('block');
+    document.getElementById('lesson-word-section').classList.add('block');
     document.getElementById("loading").classList='hidden';
   }
 
@@ -57,8 +57,8 @@ const lessonWordFetching = (level) => {
         .then(res => res.json())
         .then(data => {
 
-            wordLessonShow(data.data),
-                removeBg(),
+            wordLessonShow(data.data)
+                removeBg()
                 document.getElementById(`btn-${level}`).classList.add('active')
         })
 }

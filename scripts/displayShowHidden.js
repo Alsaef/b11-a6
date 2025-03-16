@@ -20,7 +20,22 @@ document.getElementById('getShow').addEventListener('click',function() {
         icon: "success"
       });
 
+
+
       
+
+    //   if (window.location.hash === "#learn") {
+    //     history.replaceState(null, null, window.location.pathname);
+       
+    //     window.location.hash = "#learn"; 
+    // } else if (window.location.hash === "#faq") {
+    //     history.replaceState(null, null, window.location.pathname);
+        
+    //     window.location.hash = "#faq"; 
+    // } else {
+    //     history.replaceState(null, null, window.location.pathname);
+       
+    // }
 
 
      
