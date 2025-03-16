@@ -152,6 +152,8 @@ const showSingleWordData=(word)=>{
     const modal=document.getElementById('my_modal_5')
       showWordData.innerHTML=`
         <div>
+           <div class='border-2 border-[#EDF7FF] bg-white rounded-xl p-4'>
+           
             <h2 class="text-xl font-bold flex gap-2 items-center">
               ${word.word} <span class="text-black flex items-center gap-3">(<i class="fa-solid fa-microphone-lines"></i>  :${word.pronunciation} )</span>
             </h2>
@@ -169,11 +171,12 @@ const showSingleWordData=(word)=>{
               <p class="font-semibold">সমার্থক শব্দ গুলো</p>
               <div class="flex gap-2 mt-1">
 
-              ${word.synonyms?.map(sy => `<span class="badge badge-outline">${sy}</span>`).join('')}
+              ${word.synonyms?.map(sy => `<span class="btn">${sy}</span>`).join('')}
               
                 
               </div>
             </div>
+           </div>
             <div class="mt-4 ">
              <form method="dialog">
               <button class="btn btn-primary">Complete Learning</button>
