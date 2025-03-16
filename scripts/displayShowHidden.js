@@ -19,6 +19,27 @@ document.getElementById('getShow').addEventListener('click',function() {
         text: "এগিয়ে যান!",
         icon: "success"
       });
+
+
+
+      const learnSection = document.getElementById("learn");
+      const faqSection = document.getElementById("faq");
+
+      if (window.location.hash === "#learn") {
+        history.replaceState(null, null, window.location.pathname);
+        learnSection.scrollIntoView({ behavior: "smooth" });
+        window.location.hash = "#learn"; 
+    } else if (window.location.hash === "#faq") {
+        history.replaceState(null, null, window.location.pathname);
+        faqSection.scrollIntoView({ behavior: "smooth" });
+        window.location.hash = "#faq"; 
+    } else {
+        history.replaceState(null, null, window.location.pathname);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+
+     
   }else{
     alert('worng password')
   }
@@ -31,3 +52,4 @@ const hiddenLogout=()=>{
     document.getElementById('faq').classList.add('hidden')
     document.getElementById('banner').classList.remove('hidden')
 }
+
